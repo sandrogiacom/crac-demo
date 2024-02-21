@@ -70,3 +70,38 @@ No mesmo terminal onde a aplicação estava sendo executada, execute o comando a
 ```bash
 java -XX:CRaCRestoreFrom=cr
 ```
+
+## Other commands
+
+### Hit application
+
+Envia 1000 requisições para a aplicação
+
+```bash
+siege -c 1 -r 1000 -b http://localhost:8080/hello
+```
+
+### Stop container
+
+```bash
+docker stop demo_crac
+```
+
+### Remove container
+
+```bash
+docker rm demo_crac
+```
+
+### Start container
+
+```bash
+docker start demo_crac
+```
+
+### Remove docker image:
+
+```bash
+docker rmi java21-crac
+```
+
